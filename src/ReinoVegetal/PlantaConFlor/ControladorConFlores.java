@@ -1,4 +1,4 @@
-package ReinoVegetal.PlantasConFlores;
+package ReinoVegetal.PlantaConFlor;
 
 public class ControladorConFlores {
 
