@@ -1,8 +1,8 @@
-package ReinoVegetal.PlantaConFlor.ConFruto;
+package pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor;
 
-import ReinoVegetal.PlantaConFlor.plantaConFlor;
+import pkInventario.pkReinoViviente.ReinoVegetal;
 
-public class plantaConFruto extends plantaConFlor {
+public abstract class plantaConFruto extends ReinoVegetal {
 public plantaConFruto(Boolean tieneFlor,Boolean tieneFruto){
     super(tieneFlor,tieneFruto);
 }
