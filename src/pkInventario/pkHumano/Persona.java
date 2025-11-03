@@ -1,7 +1,5 @@
 package pkInventario.pkHumano;
 
-public class Persona {
+public abstract class Persona {
 
-
-    public Persona(){};
 }
