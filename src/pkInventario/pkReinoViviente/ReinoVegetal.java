@@ -7,15 +7,15 @@ public abstract class  ReinoVegetal {
     private Boolean estaMaduro = false;
     private Boolean tieneFlor = false;
     private Boolean tieneFruto = false;
-    private String nombreCientifico;
+    private String nombreCientifico = "Sin nombre";
 
     private Float tamanio;
     
     public ReinoVegetal(Boolean tieneFlor, Boolean tieneFruto) {
         this.tieneFlor = tieneFlor;
         this.tieneFruto = tieneFruto;
-
     }
+    
     public void crecer(Float tamanio){
         setTamanio(tamanio);
         System.out.println("Crecio: " + getTamanio() + "cm");
@@ -59,7 +59,7 @@ public abstract class  ReinoVegetal {
     public void setTamanio(Float tamanio) {
         this.tamanio = tamanio;
     }
-    
+
     public String getNombreCientifico() {
         return nombreCientifico;
     }

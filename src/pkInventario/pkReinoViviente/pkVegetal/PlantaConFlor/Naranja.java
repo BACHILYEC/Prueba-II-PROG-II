@@ -2,7 +2,8 @@ package pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor;
 
 public class Naranja extends PlantaConFruto{
     public Naranja(){
-        super(false,false);
+        super(true,true);
+        setNombreCientifico("Naranaja (Citrus sinensis)");
     }
 
     public void injertarConDurazno(Durazno duraznito){

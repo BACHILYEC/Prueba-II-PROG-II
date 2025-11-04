@@ -34,5 +34,10 @@ public class Agricultor extends Persona {
         String frase = "Estoy abonando mis plantas con " + musgo.getNombreCientifico(); 
         return frase;
     }
+
+    public void registrar(Durazno durazno, Limon limoncito, Naranja naranja, ReinaClaudia reinita){
+        System.out.println("Estoy registrando: " + durazno.getNombreCientifico() + limoncito.getNombreCientifico() + naranja.getNombreCientifico() + reinita.getNombreCientifico());
+    }
+
 }
 
