@@ -12,27 +12,32 @@ public class Agricultor extends Persona {
     }
 
     public String sembrarLimon(Limon limon){
-        String frase = "";    
+        String frase = "Estoy sembrando un " + limon.getNombreCientifico();    
         return frase;
     }
     public String sembrarNaranja(Naranja naranja){
-        String frase = "";
+        String frase = "Estoy sembrando un " + naranja.getNombreCientifico(); 
         return frase;
     }
 
     public String sembrarDurazno(Durazno durazno){
-        String frase = "";
+        String frase = "Estoy sembrando un " + durazno.getNombreCientifico(); 
         return frase;
     }
 
     public String sembrarReinaClaudia(ReinaClaudia reinaClaudia){
-        String frase = "";
+        String frase = "Estoy sembrando un " + reinaClaudia.getNombreCientifico(); 
         return frase;
     }
 
     public String abonar(MusgoTurbera musgo){
-        String frase = "";
+        String frase = "Estoy abonando mis plantas con " + musgo.getNombreCientifico(); 
         return frase;
     }
+
+    public void registrar(Durazno durazno, Limon limoncito, Naranja naranja, ReinaClaudia reinita){
+        System.out.println("Estoy registrando: " + durazno.getNombreCientifico() + limoncito.getNombreCientifico() + naranja.getNombreCientifico() + reinita.getNombreCientifico());
+    }
+
 }
 
