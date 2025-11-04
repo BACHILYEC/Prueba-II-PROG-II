@@ -1,8 +1,9 @@
 package pkInventario.pkHumano;
 
 public class Cliente extends Persona {
-    public Cliente(){
-        super();
+    
+    public Cliente(String nombre, String apellido, String cedula){
+        super(nombre, apellido, cedula);
     }
 
     public String retirar(){

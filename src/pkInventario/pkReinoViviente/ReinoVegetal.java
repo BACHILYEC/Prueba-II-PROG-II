@@ -1,6 +1,6 @@
 package pkInventario.pkReinoViviente;
 
-import pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor.plantaConFruto;
+import pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor.PlantaConFruto;
 
 public abstract class  ReinoVegetal {
     private Boolean estaPodrido = false;
@@ -10,6 +10,15 @@ public abstract class  ReinoVegetal {
     private String nombreCientifico;
     private Float tamanio;
     
+
+    public String getNombreCientifico() {
+        return nombreCientifico;
+    }
+
+    public void setNombreCientifico(String nombreCientifico) {
+        this.nombreCientifico = nombreCientifico;
+    }
+
     public ReinoVegetal(Boolean tieneFlor, Boolean tieneFruto) {
         this.tieneFlor = tieneFlor;
         this.tieneFruto = tieneFruto;
@@ -19,6 +28,7 @@ public abstract class  ReinoVegetal {
         setTamanio(tamanio);
         System.out.println("Crecio: " + getTamanio() + "cm");
     }
+    
     public Boolean getEstaPodrido() {
         return estaPodrido;
     }
