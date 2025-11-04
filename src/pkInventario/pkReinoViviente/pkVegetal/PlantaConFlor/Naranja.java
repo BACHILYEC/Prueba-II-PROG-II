@@ -2,20 +2,11 @@ package pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor;
 
 public class Naranja extends PlantaConFruto{
     public Naranja(){
-        super(true,true);
+        super(false,false);
     }
 
     public void injertarConDurazno(Durazno duraznito){
         System.out.println("Estoy injertandome con " + duraznito.getNombreCientifico());
     }
-
-
-
-
-
-
-
-
-
 
 }
