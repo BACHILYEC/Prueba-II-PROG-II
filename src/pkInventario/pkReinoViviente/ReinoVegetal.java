@@ -8,17 +8,9 @@ public abstract class  ReinoVegetal {
     private Boolean tieneFlor = false;
     private Boolean tieneFruto = false;
     private String nombreCientifico;
+
     private Float tamanio;
     
-
-    public String getNombreCientifico() {
-        return nombreCientifico;
-    }
-
-    public void setNombreCientifico(String nombreCientifico) {
-        this.nombreCientifico = nombreCientifico;
-    }
-
     public ReinoVegetal(Boolean tieneFlor, Boolean tieneFruto) {
         this.tieneFlor = tieneFlor;
         this.tieneFruto = tieneFruto;
@@ -28,7 +20,6 @@ public abstract class  ReinoVegetal {
         setTamanio(tamanio);
         System.out.println("Crecio: " + getTamanio() + "cm");
     }
-    
     public Boolean getEstaPodrido() {
         return estaPodrido;
     }
@@ -67,6 +58,13 @@ public abstract class  ReinoVegetal {
 
     public void setTamanio(Float tamanio) {
         this.tamanio = tamanio;
+    }
+    
+    public String getNombreCientifico() {
+        return nombreCientifico;
+    }
+    public void setNombreCientifico(String nombreCientifico) {
+        this.nombreCientifico = nombreCientifico;
     }
 
 }
