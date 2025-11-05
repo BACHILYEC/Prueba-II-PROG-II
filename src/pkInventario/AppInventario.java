@@ -78,7 +78,7 @@ public class AppInventario {
 
         reinita.injerConLimon(limon);
 
-        limon.injertarCon(naranja);
+        limon.injertarConNaranja(naranja);
 
         System.out.println();
 

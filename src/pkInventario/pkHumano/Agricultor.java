@@ -36,7 +36,7 @@ public class Agricultor extends Persona {
     }
 
     public void registrar(Durazno durazno, Limon limoncito, Naranja naranja, ReinaClaudia reinita){
-        System.out.println("Estoy registrando: " + durazno.getNombreCientifico() + limoncito.getNombreCientifico() + naranja.getNombreCientifico() + reinita.getNombreCientifico());
+        System.out.println("Estoy registrando: " + "\n" + durazno.getNombreCientifico() +"\n"+ limoncito.getNombreCientifico() + "\n"+ naranja.getNombreCientifico() +"\n"+ reinita.getNombreCientifico());
     }
 
 }
