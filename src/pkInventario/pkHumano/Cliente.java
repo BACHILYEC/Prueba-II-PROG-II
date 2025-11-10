@@ -12,38 +12,41 @@ public class Cliente extends Persona {
     }
 
     public String retirar(Naranja naranjita){
+        String frase = "";
         if(naranjita.getEstaPodrido()){
-            String frase = "No estoy retirando una " + naranjita.getNombreCientifico() + " porque esta podrida";
+        frase = "No estoy retirando una " + naranjita.getNombreCientifico() + " porque esta podrida";
             return frase;
         }
-        String frase = "Estoy retirando una " +  (naranjita.getNombreCientifico());
+        frase = "Estoy retirando una " +  (naranjita.getNombreCientifico());
         return frase;     
     }
 
     public String retirar(Limon limoncito){
-        if(limoncito.getEstaPodrido()){
-            String frase = "No estoy retirando un " + limoncito.getNombreCientifico() + " porque esta podrido";
+        String frase = "";        if(limoncito.getEstaPodrido()){
+        frase = "No estoy retirando un " + limoncito.getNombreCientifico() + " porque esta podrido";
             return frase;
         }
-        String frase = "Estoy retirando una " + limoncito.getNombreCientifico();
+        frase = "Estoy retirando una " + limoncito.getNombreCientifico();
         return frase;
     }
 
     public String retirar(Durazno duraznito){
+        String frase = "";
         if(duraznito.getEstaPodrido()){
-            String frase = "No estoy retirando un " + duraznito.getNombreCientifico() + " porque esta podrido";
+            frase = "No estoy retirando un " + duraznito.getNombreCientifico() + " porque esta podrido";
             return frase;
         }
-        String frase = "Estoy retirando una " + duraznito.getNombreCientifico();
+        frase = "Estoy retirando una " + duraznito.getNombreCientifico();
         return frase;
     }
 
     public String retirar(ReinaClaudia reinita){
+        String frase = "";
         if(reinita.getEstaPodrido()){
-            String frase = "No estoy retirando una " + reinita.getNombreCientifico() + " porque esta podrida";
+            frase = "No estoy retirando una " + reinita.getNombreCientifico() + " porque esta podrida";
             return frase;
         }
-        String frase = "Estoy retirando una " + reinita.getNombreCientifico();
+        frase = "Estoy retirando una " + reinita.getNombreCientifico();
         return frase;
     }
 
@@ -52,9 +55,9 @@ public class Cliente extends Persona {
         String msg2 = "[estado] sin madurar";
         System.out.println("---------------------");
         if (naranja.getEstaMaduro()) {
-            System.out.println("* Naranaja - " + msg1);
+            System.out.println("* Naranja - " + msg1);
         } else {
-            System.out.println("* Naranaja - " + msg2);
+            System.out.println("* Naranja - " + msg2);
         }
         if (duraznito.getEstaMaduro()) {
             System.out.println("* Durazno - " + msg1);

@@ -2,20 +2,18 @@ package pkInventario.pkReinoViviente;
 
 import pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor.PlantaConFruto;
 
-public abstract class  ReinoVegetal {
+public abstract class ReinoVegetal {
     private Boolean estaPodrido = false;
     private Boolean estaMaduro = false;
     private Boolean tieneFlor = false;
     private Boolean tieneFruto = false;
     private String nombreCientifico = "Sin nombre";
 
-    private Float tamanio;
-    
     public ReinoVegetal(Boolean tieneFlor, Boolean tieneFruto) {
         this.tieneFlor = tieneFlor;
         this.tieneFruto = tieneFruto;
     }
-    
+
     public Boolean getEstaPodrido() {
         return estaPodrido;
     }
@@ -48,17 +46,10 @@ public abstract class  ReinoVegetal {
         this.tieneFruto = tieneFruto;
     }
 
-    public Float getTamanio() {
-        return tamanio;
-    }
-
-    public void setTamanio(Float tamanio) {
-        this.tamanio = tamanio;
-    }
-
     public String getNombreCientifico() {
         return nombreCientifico;
     }
+
     public void setNombreCientifico(String nombreCientifico) {
         this.nombreCientifico = nombreCientifico;
     }

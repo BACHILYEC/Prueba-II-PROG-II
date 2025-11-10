@@ -9,19 +9,19 @@ import pkInventario.pkReinoViviente.pkVegetal.PlantaConFlor.ReinaClaudia;
 import pkInventario.pkReinoViviente.pkVegetal.PlantasSinFlor.MusgoTurbera;
 
 public class AppInventario {
-    Cliente cliente = new Cliente("Arturo", "Bosques", "1234859561");
+    Cliente cliente = new Cliente("Pedro", "Bosques", "1234859561");
 
     Agricultor agricultor = new Agricultor("Martin", "Garrix", "1238686868");
-        
-        Naranja naranja = new Naranja();
 
-        Limon limon = new Limon();
+    Naranja naranja = new Naranja();
 
-        Durazno durazno = new Durazno();
+    Limon limon = new Limon();
 
-        ReinaClaudia reinita = new ReinaClaudia();
+    Durazno durazno = new Durazno();
 
-        MusgoTurbera musguito = new MusgoTurbera();
+    ReinaClaudia reinita = new ReinaClaudia();
+
+    MusgoTurbera musguito = new MusgoTurbera();
 
     public void presentar() {
 
@@ -37,14 +37,11 @@ public class AppInventario {
     public void requerir1() {
 
         System.out.println("Requerimiento 1: ");
-
-        System.out.println(agricultor.sembrarNaranja(naranja));
-
-        System.out.println(agricultor.sembrarDurazno(durazno));
-
-        System.out.println(agricultor.sembrarLimon(limon));
-
-        System.out.println(agricultor.sembrarReinaClaudia(reinita));
+        System.out.println(agricultor.sembrar(limon));
+        System.out.println(agricultor.sembrar(naranja));
+        System.out.println(agricultor.sembrar(reinita));
+        System.out.println(agricultor.sembrar(durazno));
+        
 
         System.out.println();
     }
@@ -85,6 +82,7 @@ public class AppInventario {
     }
 
     public void requerir8() {
+        durazno.setEstaMaduro(true);
         System.out.println("Requerimiento 8: ");
 
         System.out.println("*** VISUALIZANDO COSECHA ***");
@@ -95,13 +93,12 @@ public class AppInventario {
     }
 
     public void requerir9() {
+        reinita.setEstaPodrido(true);
         System.out.println("Requerimiento 9: ");
 
         System.out.println("Soy el cliente " + cliente.getNombre() + " y estoy retirando los siguientes productos: \n");
 
         System.out.println("*** RETIRANDO PRODUCTOS ***");
-
-
         System.out.print(cliente.retirar(reinita) + "\n" + cliente.retirar(limon) + "\n" + cliente.retirar(naranja)
                 + "\n" + cliente.retirar(durazno));
         System.out.println();
