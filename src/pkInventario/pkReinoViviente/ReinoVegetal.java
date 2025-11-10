@@ -16,10 +16,6 @@ public abstract class  ReinoVegetal {
         this.tieneFruto = tieneFruto;
     }
     
-    public void crecer(Float tamanio){
-        setTamanio(tamanio);
-        System.out.println("Crecio: " + getTamanio() + "cm");
-    }
     public Boolean getEstaPodrido() {
         return estaPodrido;
     }

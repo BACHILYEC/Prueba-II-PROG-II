@@ -7,7 +7,7 @@ public class Limon extends PlantaConFruto{
     }
 
     public void injertarConNaranja(Naranja naranjita){
-        System.out.println("Estoy injertandome con " + naranjita.getNombreCientifico());
+        System.out.println("Soy un Limon y estoy injertandome con " + naranjita.getNombreCientifico());
     }
 
 }

@@ -22,7 +22,7 @@ public class Cliente extends Persona {
 
     public String retirar(Limon limoncito){
         if(limoncito.getEstaPodrido()){
-            String frase = "No estoy retirando una " + limoncito.getNombreCientifico() + " porque esta podrida";
+            String frase = "No estoy retirando un " + limoncito.getNombreCientifico() + " porque esta podrido";
             return frase;
         }
         String frase = "Estoy retirando una " + limoncito.getNombreCientifico();
@@ -31,7 +31,7 @@ public class Cliente extends Persona {
 
     public String retirar(Durazno duraznito){
         if(duraznito.getEstaPodrido()){
-            String frase = "No estoy retirando una " + duraznito.getNombreCientifico() + " porque esta podrida";
+            String frase = "No estoy retirando un " + duraznito.getNombreCientifico() + " porque esta podrido";
             return frase;
         }
         String frase = "Estoy retirando una " + duraznito.getNombreCientifico();
@@ -46,33 +46,34 @@ public class Cliente extends Persona {
         String frase = "Estoy retirando una " + reinita.getNombreCientifico();
         return frase;
     }
-public void visualizar(Naranja naranja, Durazno duraznito, Limon limoncito, ReinaClaudia reinita) {
-    String msg1 = "[estado] maduro";
-    String msg2 = "[estado] sin madurar";
-    System.out.println("---------------------");
-    if (naranja.getEstaMaduro()) {
-        System.out.println("* Naranaja - " + msg1);
-    } else {
-        System.out.println("* Naranaja - " + msg2);
-    }
-    if (duraznito.getEstaMaduro()) {
-        System.out.println("* Durazno - " + msg1);
-    } else {
-        System.out.println("* Durazno - " + msg2);
-    }
-    if (limoncito.getEstaMaduro()) {
-        System.out.println("* Limon - " + msg1);
-    } else {
-        System.out.println("* Limon - " + msg2);
-    }
 
-    if (reinita.getEstaMaduro()) {
-        System.out.println("* Reina Claudia - " + msg1);
-    } else {
-        System.out.println("* Reinita Claudia - " + msg2);
+    public void visualizar(Naranja naranja, Durazno duraznito, Limon limoncito, ReinaClaudia reinita) {
+        String msg1 = "[estado] maduro";
+        String msg2 = "[estado] sin madurar";
+        System.out.println("---------------------");
+        if (naranja.getEstaMaduro()) {
+            System.out.println("* Naranaja - " + msg1);
+        } else {
+            System.out.println("* Naranaja - " + msg2);
+        }
+        if (duraznito.getEstaMaduro()) {
+            System.out.println("* Durazno - " + msg1);
+        } else {
+            System.out.println("* Durazno - " + msg2);
+        }
+        if (limoncito.getEstaMaduro()) {
+            System.out.println("* Limon - " + msg1);
+        } else {
+            System.out.println("* Limon - " + msg2);
+        }
+
+        if (reinita.getEstaMaduro()) {
+            System.out.println("* Reina Claudia - " + msg1);
+        } else {
+            System.out.println("* Reinita Claudia - " + msg2);
+        }
+        System.out.println("---------------------");
     }
-    System.out.println("---------------------");
-}
 
 }
 

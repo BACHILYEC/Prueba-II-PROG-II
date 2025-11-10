@@ -9,7 +9,7 @@ public class ReinaClaudia extends PlantaConFruto {
 
   public void injerConLimon(Limon limoncito){
 
-    System.out.println("Estoy injertandome con " + limoncito.getNombreCientifico());
+    System.out.println("Soy una Reina Claudia y estoy injertandome con " + limoncito.getNombreCientifico());
 
   }
 

@@ -7,7 +7,7 @@ public class Naranja extends PlantaConFruto{
     }
 
     public void injertarConDurazno(Durazno duraznito){
-        System.out.println("Estoy injertandome con " + duraznito.getNombreCientifico());
+        System.out.println("Soy una Naranja y estoy injertandome con " + duraznito.getNombreCientifico());
     }
 
 }

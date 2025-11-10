@@ -12,7 +12,8 @@ public class AppInventario {
     Cliente cliente = new Cliente("Arturo", "Bosques", "1234859561");
 
     Agricultor agricultor = new Agricultor("Martin", "Garrix", "1238686868");
-    Naranja naranja = new Naranja();
+        
+        Naranja naranja = new Naranja();
 
         Limon limon = new Limon();
 
@@ -22,12 +23,12 @@ public class AppInventario {
 
         MusgoTurbera musguito = new MusgoTurbera();
 
-    public void crear() {
+    public void presentar() {
 
-        System.out.println("Se ha creado al agricultor " + agricultor.getNombre() + " " + agricultor.getApellido()
+        System.out.println("\nPresentando al agricultor  " + agricultor.getNombre() + " " + agricultor.getApellido()
                 + " con cedula " + agricultor.getCedula());
 
-        System.out.println("Se ha creado al cliente " + cliente.getNombre() + " " + cliente.getApellido()
+        System.out.println("Presentando al cliente " + cliente.getNombre() + " " + cliente.getApellido()
                 + " con cedula " + cliente.getCedula());
 
         System.out.println();
@@ -57,8 +58,8 @@ public class AppInventario {
 
     }
 
-    public void requerirvarios() {
-        System.out.println("Requerimiento 3,4,5,6 :");
+    public void requerirVarios() {
+        System.out.println("Requerimientos 3,4,5 y 6 :");
 
         naranja.injertarConDurazno(durazno);
 
@@ -74,6 +75,8 @@ public class AppInventario {
 
     public void requerir7() {
         System.out.println("Requerimiento 7: ");
+
+        System.out.println("Soy el agricultor " + agricultor.getNombre() + " y estoy registrando mi cosecha: \n");
 
         agricultor.registrar(durazno, limon, naranja, reinita);
 
@@ -94,10 +97,14 @@ public class AppInventario {
     public void requerir9() {
         System.out.println("Requerimiento 9: ");
 
+        System.out.println("Soy el cliente " + cliente.getNombre() + " y estoy retirando los siguientes productos: \n");
+
         System.out.println("*** RETIRANDO PRODUCTOS ***");
+
 
         System.out.print(cliente.retirar(reinita) + "\n" + cliente.retirar(limon) + "\n" + cliente.retirar(naranja)
                 + "\n" + cliente.retirar(durazno));
+        System.out.println();
 
     }
 

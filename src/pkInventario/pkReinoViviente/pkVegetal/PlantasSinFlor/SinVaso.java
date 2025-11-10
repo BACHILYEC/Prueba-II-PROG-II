@@ -2,9 +2,9 @@ package pkInventario.pkReinoViviente.pkVegetal.PlantasSinFlor;
 
 import pkInventario.pkReinoViviente.ReinoVegetal;
 
-public abstract class SinVasos extends ReinoVegetal {
+public abstract class SinVaso extends ReinoVegetal {
     
-    public SinVasos(Boolean tieneFlor, Boolean tieneFruto) {
+    public SinVaso(Boolean tieneFlor, Boolean tieneFruto) {
         super(false, false);
     }
 }

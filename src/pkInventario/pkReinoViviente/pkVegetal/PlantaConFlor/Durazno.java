@@ -8,7 +8,7 @@ public class Durazno extends PlantaConFruto {
     }
 
     public void injertarConReinaClauda(ReinaClaudia reinita){
-        System.out.println("Estoy injertandome con " + reinita.getNombreCientifico());
+        System.out.println("Soy un durazno y estoy injertandome con " + reinita.getNombreCientifico());
     }
 
 }
