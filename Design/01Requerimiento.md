@@ -16,6 +16,7 @@
 > R04: El Durazno y la Reina Claudia se pueden injertar.  
 > R05: El la Reina Claudia y el limón se pueden injertar.  
 > R06: La Naranja y el Durazno se pueden injertar.  
-> R07: El agricultor registra su cosecha en el inventario.  
-> R08: El cliente visualiza la cosecha en el inventario.  
+> R07: El agricultor registra su cosecha con su nombre común y científico en el inventario. 
+> R08: El cliente visualiza cada cosecha con su estado de madurez en el inventario.  
 > R09: El cliente retira la cosecha que no esta podrida.  
+
